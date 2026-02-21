@@ -1,5 +1,5 @@
-@echo off
-REM Build Script for 01_Calculator
+@echo off 
+REM Build Script for 02_Bank_System
 
 REM Create build folder if it doesn't exist
 if not exist build (
@@ -7,13 +7,13 @@ if not exist build (
 )
 
 REM Compile all cpp files
-g++ src\main.cpp src\basic_operation.cpp src\advanced_operation.cpp -Iinclude -o build\calculator.exe
+g++ src\main.cpp src\models\account.cpp src\models\bank.cpp -Iinclude -o build\bank.exe
 
 REM Check if compilation succeeded
 if %ERRORLEVEL% == 0 (
     echo Compilation successful!
     echo Running program...
-    build\calculator.exe
+    build\bank.exe
 ) else (
     echo Compilation failed!
 )
