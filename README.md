@@ -34,7 +34,7 @@ This repository documents my progress in C++ — from fundamentals to more advan
 
 ## 📂 Projects
 
-| #   | Project                        | Description                                                                                                                                                        | Status                                                           |
-| --- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| 01  | [Calculator](01_Calculator/)   | **Advanced CLI calculator** implemented in C++ using **classes, objects, and modular header files** (`.hpp`) for clean and reusable code.                          | ![Done](https://img.shields.io/badge/Done-brightgreen)           |
-| 02  | [Bank System](02_Bank_System/) | A **C++ Console application** that simulates real-world banking operations using **Object-Oriented Programming**. **File I/O** and **Array/Vector** are also used. | ![In progress](https://img.shields.io/badge/In--progress-yellow) |
+| #   | Project                        | Description                                                                                                                                                        | Status                                                        |
+| --- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
+| 01  | [Calculator](01_Calculator/)   | **Advanced CLI calculator** implemented in C++ using **classes, objects, and modular header files** (`.hpp`) for clean and reusable code.                          | ![Done](https://img.shields.io/badge/Done-brightgreen)        |
+| 02  | [Bank System](02_Bank_System/) | A **C++ Console application** that simulates real-world banking operations using **Object-Oriented Programming**. **File I/O** and **Array/Vector** are also used. | ![In progress](https://img.shields.io/badge/Done-BrightGreen) |
