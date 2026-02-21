@@ -33,7 +33,7 @@ This repository documents my progress in C++ — from fundamentals to more advan
 ---
 
 ## 📂 Project Structure
-| #   | Project                        | Description                                                                                                                       |
-| --- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
-| 01  | [Calculator](01_Calculator/)   | Advanced CLI calculator implemented in C++ using classes, objects, and modular header files (`.hpp`) for clean and reusable code. |
-| 02  | [Bank System](02_Bank_System/) |                                                                                                                                   |
+| #   | Project                        | Description                                                                                                                                                   |
+| --- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01  | [Calculator](01_Calculator/)   | Advanced CLI calculator implemented in C++ using classes, objects, and modular header files (`.hpp`) for clean and reusable code.                             |
+| 02  | [Bank System](02_Bank_System/) | A **Console application** that simulates real-world banking operations using **Object-Oriented Programming**. **File I/O** and **Array/Vector** is also used. |
