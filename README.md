@@ -33,3 +33,6 @@ This repository documents my progress in C++ — from fundamentals to more advan
 ---
 
 ## 📂 Project Structure
+| #   | Project    | Description                                                                                                                       |
+| --- | ---------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| 01  | Calculator | Advanced CLI calculator implemented in C++ using classes, objects, and modular header files (`.hpp`) for clean and reusable code. |
