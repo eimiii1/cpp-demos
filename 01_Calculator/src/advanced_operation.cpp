@@ -5,7 +5,7 @@
 void Advanced::showOptions() {
     std::cout << "\nAdvanced Operations\n" << std::endl;
     std::string operations[] = {
-        "power of N",
+        "power of n",
         "Square Root",
         "Factorial",
         "Get Sine of n",
