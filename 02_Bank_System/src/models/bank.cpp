@@ -30,6 +30,7 @@ void Bank::deposit(int accountNumber, double amount) {
     for (auto& acc : accounts) {
         if (acc.getAccountNumber() == accountNumber) {
             acc.deposit(amount);
+            saveAccountsfromFile();
             std::cout << "Deposit successful! New balance: " << acc.getBalance() << "\n";
             found = true;
             break;
@@ -49,6 +50,7 @@ void Bank::withdraw(int accountNumber, double amount) {
             found = true;
             if (acc.withdraw(amount)) {
                 std::cout << "Withdraw successful! New Balance: " << acc.getBalance() << "\n";
+                saveAccountsfromFile();
             } else {
                 std::cout << "Insufficient balance!\n";
             }
@@ -94,4 +96,19 @@ void Bank::loadAccountsfromFile() {
 
         if (accNum >= nextAccountNumber) nextAccountNumber = accNum + 1;
     }
+}
+
+void Bank::saveAccountsfromFile() {
+    std::ofstream outFile("data/accounts.txt");
+    if (!outFile) {
+        std::cout << "No accounts file found.\n";
+        return;
+    }
+
+    for (const auto& acc : accounts) {
+        outFile << acc.getAccountNumber() << " "
+                << acc.getName() << " "
+                << acc.getBalance() << "\n";
+    }
+    outFile.close();
 }

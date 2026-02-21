@@ -16,4 +16,5 @@ public:
 
     // load files
     void loadAccountsfromFile();
+    void saveAccountsfromFile();
 };
