@@ -1,0 +1,17 @@
+# Executables
+*.exe 
+*.out 
+
+# Object files 
+*.o 
+*.obj 
+
+# Build directories
+build/
+bin/
+
+# VS Code 
+.vscode/
+
+# Mac 
+.DS_Store
