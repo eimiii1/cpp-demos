@@ -85,7 +85,7 @@ Since both sorting functions modify the same vector by reference, the vector is 
 ---
 ## 🔮 Possible Improvements
 
-- - Add input validation for non-integer values
+- Add input validation for non-integer values
 - Use `std::sort` for comparison
 - Add menu system
 - Prevent duplicate sorting logic (use a flag for order type)
