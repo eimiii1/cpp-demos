@@ -1,4 +1,4 @@
-# Top & Bottom 3 Numbers
+# Array Number Sorter
 
 ![C++](https://img.shields.io/badge/Language-C++-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
