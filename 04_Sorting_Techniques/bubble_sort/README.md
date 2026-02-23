@@ -11,10 +11,10 @@ Each project focuses on a different application of Bubble Sort, from sorting num
 
 ## 📂 Projects Included
 
-| Project                     | Description                                                                                                                                                                                                                 |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `01_student_ranking system` | A menu-driven C++ application that stores students’ names and scores, sorts them in **descending order** using Bubble Sort, and displays a **ranked leaderboard**. Demonstrates structs, vectors, and passing by reference. |
-| `02_student_score_sorter`   | A simple C++ console program that allows the user to enter multiple scores, then sorts and displays them in **ascending and descending order** using Bubble Sort. Focuses on vectors, loops, and manual sorting.            |
+| #   | Projects                 | Description                                                                                                                                                                                                                 |
+| --- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | `Student Ranking System` | A menu-driven C++ application that stores students’ names and scores, sorts them in **descending order** using Bubble Sort, and displays a **ranked leaderboard**. Demonstrates structs, vectors, and passing by reference. |
+| 2   | `Student Score Sorter`   | A simple C++ console program that allows the user to enter multiple scores, then sorts and displays them in **ascending and descending order** using Bubble Sort. Focuses on vectors, loops, and manual sorting.            |
 
 ---
 
