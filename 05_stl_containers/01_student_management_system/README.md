@@ -2,7 +2,7 @@
 
 ![C++](https://img.shields.io/badge/Language-C++-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Bubble Sort](https://img.shields.io/badge/Algorithm-Bubble%20Sort-orange)
+![Map](https://img.shields.io/badge/Container-Map-orange)
 
 
 A **console-based C++ application** that allows you to **add, update, search, remove, and display** student records using `std::map`.
