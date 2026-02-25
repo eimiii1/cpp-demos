@@ -7,8 +7,6 @@
 This folder contains **multiple small projects demonstrating the Bubble Sort algorithm** in C++.  
 Each project focuses on a different application of Bubble Sort, from sorting numbers to ranking students.
 
----
-
 ## 📂 Projects Included
 
 | #   | Projects                 | Description                                                                                                                                                                                                                 |
@@ -16,8 +14,6 @@ Each project focuses on a different application of Bubble Sort, from sorting num
 | 1   | `Student Ranking System` | A menu-driven C++ application that stores students’ names and scores, sorts them in **descending order** using Bubble Sort, and displays a **ranked leaderboard**. Demonstrates structs, vectors, and passing by reference. |
 | 2   | `Student Score Sorter`   | A simple C++ console program that allows the user to enter multiple scores, then sorts and displays them in **ascending and descending order** using Bubble Sort. Focuses on vectors, loops, and manual sorting.            |
 | 3   | `Array Number Sorter`    | Enter 6 numbers, sorts them using bubble sort, and displays the 3 largest and 3 smallest numbers. \| C++ \| Bubble Sort, Array Manipulation                                                                                 |
-
----
 
 ## 🧠 Concepts Covered Across Projects
 
@@ -27,8 +23,6 @@ Each project focuses on a different application of Bubble Sort, from sorting num
 - Nested loops for manual sorting  
 - Function decomposition and modularity  
 - Basic console input/output (`cin`, `cout`, `getline`)  
-
----
 
 ## 💻 How to Run a Project
 

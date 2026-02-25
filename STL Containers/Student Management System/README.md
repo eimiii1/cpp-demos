@@ -7,8 +7,6 @@
 
 A **console-based C++ application** that allows you to **add, update, search, remove, and display** student records using `std::map`.
 
----
-
 ## 🚀 Features
 
 - Add a new student with their grade.
@@ -17,14 +15,10 @@ A **console-based C++ application** that allows you to **add, update, search, re
 - Remove a student from the list.
 - Display all students and their grades.
 
----
-
 ## 🛠️ Requirements
 
 - C++17 compatible compiler (GCC, Clang, or MSVC)
 - Terminal/console for running the program
-
----
 
 ## 💻 How to Run
 
