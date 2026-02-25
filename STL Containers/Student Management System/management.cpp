@@ -19,12 +19,6 @@ int main() {
         std::cout << "\nSelect option: ";
         std::cin >> select_option;
 
-        #ifdef _WIN32
-            system("cls");
-        #else
-            system("clear");
-        #endif
-
         // input variable initializations
         std::string student;
         int grade;
