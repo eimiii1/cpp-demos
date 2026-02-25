@@ -18,15 +18,11 @@ This repository documents my progress in C++ — from fundamentals to more advan
 
 ## 🛠 Topics Covered
 
-- ✅ Variables & Data Types
-- ✅ Conditionals & Loops
-- ✅ Functions
-- ✅ Arrays & Vectors
-- ✅ Pointers & References
 - 🔄 Classes & Objects
 - 🔄 File I/O
 - 🔄 Data Structures
 - 🔄 Algorithms
+- 🔄 Sorting Techniques
 - 🔄 STL Containers
 
 (Will continue expanding as I progress.)
