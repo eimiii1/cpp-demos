@@ -93,7 +93,7 @@ void addUpdateStudent(std::map<std::string, int>& students, std::string name, in
 }
 
 void searchStudent(std::map<std::string, int>& students, std::string name) {
-    auto it = students.find(name);
+    auto it = students.find(name);  
     if (it != students.end()) {
         std::cout << "\nStudent found!\n" << std::endl;
         std::cout << it->first << ": " << it->second << "\n";
