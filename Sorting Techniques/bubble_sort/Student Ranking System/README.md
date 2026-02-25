@@ -8,8 +8,6 @@ A simple **menu-driven C++ console application** to manage student scores and di
 
 This project demonstrates **structs, vectors, function usage, and basic sorting algorithms** in C++.
 
----
-
 ## 📌 Features
 
 - ✅ Add multiple students with **name** and **score**  
@@ -17,8 +15,6 @@ This project demonstrates **structs, vectors, function usage, and basic sorting 
 - ✅ Displays a **ranking list**  
 - ✅ Simple **interactive menu** interface  
 - ✅ Uses **Bubble Sort** implemented manually (no STL sort)
-
----
 
 ## 🧠 Concepts Covered
 
@@ -28,8 +24,6 @@ This project demonstrates **structs, vectors, function usage, and basic sorting 
 - Nested loops for **Bubble Sort**  
 - Console input/output (`cin`, `getline`, `cout`)  
 - Function decomposition for modularity  
-
----
 
 ## 💻 How to Use
 
@@ -92,8 +86,6 @@ System exit.
 ```
 
 
----
-
 ## 🛠️ How to Compile
 
 ### Using g++
@@ -111,7 +103,6 @@ ranking.exe
 ```
 
 
----
 ## 🔮 Possible Improvements
 
 - Allow user to choose **ascending or descending order**
@@ -120,7 +111,6 @@ ranking.exe
 - Add **average, highest, and lowest score calculations**
 - Save and load rankings from a file
 
----
 ## 📚 Learning Purpose
 
 This project is ideal for beginners practicing:
