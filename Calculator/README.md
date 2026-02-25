@@ -6,9 +6,6 @@
 
 A **Command-Line Calculator** implemented in C++ using **classes, objects, and modular header files (`.hpp`)**.  
 This project demonstrates **object-oriented programming, modular design, and clean code structure** in C++.
-
----
-
 ## 📌 Features
 
 - ✅ Perform **basic arithmetic operations**: addition, subtraction, multiplication, division  
@@ -17,16 +14,12 @@ This project demonstrates **object-oriented programming, modular design, and cle
 - ✅ Clean CLI interface for easy user interaction  
 - ✅ Reusable code for extending with more operations  
 
----
-
 ## 🧠 Concepts Covered
 
 - Classes and objects in C++  
 - Modular programming using `.hpp` and `.cpp` files  
 - Function declarations and definitions  
 - Console input/output (`cin`, `cout`)  
-
----
 
 ## 💻 How to Use
 
@@ -75,8 +68,6 @@ Select option: 3
 
 System exit.
 ```
-
----
 
 ## 🛠️ How to Compile
 
