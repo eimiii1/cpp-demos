@@ -1,6 +1,6 @@
 # Student Management System
 
-A *Console-Based* **Student Management System** that primarily uses under Classes & Objects and `bool` *CRUD* Functions.
+A *Console-Based* **Student Management System** that primarily uses Classes & Objects and `bool` *CRUD* Functions.
 
 This repository documents creation, updating, deletion, listing, and searching of students records in a simple console environment. It highlights core object-oriented programming concepts in C++, including:
 
