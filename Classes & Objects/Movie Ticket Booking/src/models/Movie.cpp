@@ -24,28 +24,20 @@ std::string Movie::getRating() const {
 std::vector<Showtime> Movie::getShowtimes() const {return showtimes;}
     
 void Movie::information() {
-    std::cout << "\n\033[32mMovie Information\033[0m\n" << std::endl;
+    std::cout << "\n\033[32mMovie Information\033[0m\n";
     std::cout << "Title: " << this->title << "\n";
     std::cout << "Duration: " << this->duration << "\n";
     std::cout << "Rating: " << getRating() << "\n";   
     
-    std::cout << "\n" << std::left 
-              << "\033[33m" << std::setw(20) << "Showtimes\033[0m" 
-              << "\033[34m" << std::setw(5) << "Seats\033[0m" 
-              << "\n";
-    
-    // separator
-    std::cout << std::string(20 + 5, '-') << "\n";
+    std::cout << "\n\033[34mShowtimes\033[0m\n";
+    for (int i = 0; i < showtimes.size(); i++) {
+        std::cout << "\033[36m" << i+1 << ". " << showtimes[i].getTime() << "\033[0m\n";
 
-    for (auto& s : showtimes) {
-        int count = 0;
-        for (int i = 0; i < s.getSeats().size(); i++) {
-            if (!s.getSeats()[i]) count++; 
+        for (int j = 0; j < showtimes[i].getSeats().size(); j++) {
+            std::cout << (!showtimes[i].getSeats()[j] ? "\033[32m☐\033[0m" : "\033[31m☑\033[0m") << " ";
+            if ((j+1) % 5 == 0) std::cout << "\n";
+            if (j >= showtimes[i].getSeats().size() - 1) std::cout << "\n";
         }
-
-        std::cout << std::left
-                  << std::setw(20) << s.getTime() 
-                  << std::setw(5) << count 
-                  << "\n";
     }
+    
 }

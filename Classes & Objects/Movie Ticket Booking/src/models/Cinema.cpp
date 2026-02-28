@@ -6,6 +6,7 @@
 #include "../../include/Cinema.h"
 #include "../../include/Movie.h"
 #include "../../include/Showtime.h"
+#include "../../include/Ticket.h"
 
 Cinema::Cinema() {
     // create 3 instances of movies (movie list in the cinema)
@@ -41,46 +42,41 @@ void Cinema::listMovies() {
 }
 
 void booking_menu();
+void inputMovie(int& showtime, int& seat);
+void handleMovie(Cinema& cinema, Movie& movie, int& showtime, int& seat);
 
-void Cinema::handleBooking() {
+void Cinema::handleBooking(Cinema& cinema) {
     std::cout << "\n\033[31mBook a Ticket\033[0m\n" << std::endl;
-    booking_menu();
     int choice;
+
+    Movie* temp;
+
     
-    std::cout << "\nChoice: ";
-    std::cin >> choice;
-    
-    switch (choice) {
-        case 1: {
-            listMovies();
-            std::string movie;
-            std::cout << "\nSelect movie: ";
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::getline(std::cin, movie);
-            selectMovie(movie);
+    while (true) {
+        booking_menu();
+        std::cout << "\nChoice: ";
+        std::cin >> choice;
+        
+        switch (choice) {
+            case 1: {
+                listMovies();
+                std::string movie;
+                std::cout << "\nSelect movie: ";
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                std::getline(std::cin, movie);
+                temp = selectMovie(cinema, movie);
+            }
+            break;
+
+            case 2: confirmBooking(temp); break;
         }
     }
 }
-
-void Cinema::selectMovie(std::string movie) {
-    for (auto& m : movies) {
-        if (m.getTitle() == movie) {
-            m.information();
-        }
-    }
-}
-
-void Cinema::selectShowTime(std::string st) {
-
-}
-
 
 void booking_menu() {
     int option;
-    std::string arr[4] = {
+    std::string arr[2] = {
         "Select Movie",
-        "Select Showtime",
-        "Select Seat",
         "Confirm Booking"
     };
     
@@ -88,4 +84,48 @@ void booking_menu() {
     for (int i = 0; i < menu_length; i++) {
         std::cout << i+1 << ". " << arr[i] << "\n";
     }
+}
+
+Movie* Cinema::selectMovie(Cinema& cinema, std::string movie) {
+    int showtime;
+    int seat;
+
+    for (auto& m : movies) {
+        if (m.getTitle() == movie) {
+            m.information();
+            inputMovie(showtime, seat);
+            handleMovie(cinema, m, showtime, seat);
+            return &m;
+        }
+    }
+    return nullptr;
+}
+
+void inputMovie(int& showtime, int& seat) {
+    std::cout << "\nSelect showtime: ";
+    std::cin >> showtime;
+
+    std::cout << "Select seat: ";
+    std::cin >> seat;
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+}
+
+void handleMovie(Cinema& cinema, Movie& movie, int& showtime, int& seat) {
+    cinema.selectShowtime(showtime);
+    cinema.selectSeat(seat);
+}
+
+int Cinema::selectShowtime(int& showtime) {
+    return showtime;
+}
+
+int Cinema::selectSeat(int& seat) {
+    return seat;
+}
+
+void Cinema::confirmBooking(Movie* movie) {
+    std::cout << "\033[32mMovie Information\033[0m\n";
+    std::cout << "\033[34mTitle: \033[0m" << movie->getTitle() << "\n";
+    std::cout << "\033[35mDuration: \033[0m" << movie->getDuration() << "\n";
+    std::cout << "\033[36mRating: \033[0m" << movie->getRating() << "\n";
 }

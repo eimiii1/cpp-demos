@@ -1,12 +1,21 @@
 #include <iostream>
 #include <limits>
 #include "../include/Cinema.h"
+#define NOMINMAX
+
+// #include <windows.h> for UTF-8
+#ifdef _WIN32
+
+#include <windows.h>
+
+#endif
 
 void menu();
 void inputMenu(int& choice);
 void handleChoice(Cinema& cinema, int& choice);
 
 int main() {
+    SetConsoleOutputCP(CP_UTF8);
     Cinema cinema;
     std::cout << "\n\033[31mROBINSONS\033[0m MOVIEWO\033[31mR\033[0mLD\n";
     int choice;
@@ -47,6 +56,6 @@ void inputMenu(int& choice) {
 void handleChoice(Cinema& cinema, int& choice) {
     switch (choice) {
         case 1: cinema.listMovies(); break;
-        case 2: cinema.handleBooking(); break;
+        case 2: cinema.handleBooking(cinema); break;
     }
 }
