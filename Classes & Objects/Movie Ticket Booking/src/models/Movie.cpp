@@ -21,7 +21,7 @@ std::string Movie::getRating() const {
     
     return rating;
 }
-std::vector<Showtime> Movie::getShowtimes() const {return showtimes;}
+std::vector<Showtime>& Movie::getShowtimes() {return showtimes;}
     
 void Movie::information() {
     std::cout << "\n\033[32mMovie Information\033[0m\n";

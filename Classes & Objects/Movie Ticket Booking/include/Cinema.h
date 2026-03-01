@@ -15,9 +15,8 @@ public:
 
     void listMovies();
     void handleBooking(Cinema& cinema);
-    Movie* selectMovie(Cinema& cinema, std::string title);
-    int selectShowtime(int& showtime);
-    int selectSeat(int& seat);
-    void confirmBooking(Movie* movie);
+    Movie* selectMovie(Cinema& cinema, std::string title, int& showtime, int& seat);
+    Showtime* selectShowtime(Movie& movie, int& showtime, int& seat);
+    void confirmBooking(Movie* movie, Showtime* showtime, int seat);
 };
 #endif

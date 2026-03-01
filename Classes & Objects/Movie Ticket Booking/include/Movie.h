@@ -17,7 +17,7 @@ public:
     std::string getTitle() const;
     std::string getDuration() const;
     std::string getRating() const;
-    std::vector<Showtime> getShowtimes() const;
+    std::vector<Showtime>& getShowtimes();
     
     void information();
 };

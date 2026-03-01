@@ -6,6 +6,11 @@ private:
     std::string movie;
     std::string showtime;
     std::string seat;
+    
+public:
+    Ticket(std::string movie, std::string showtime, std::string seat);
+
+    void showTicket();
 };
 
 #endif

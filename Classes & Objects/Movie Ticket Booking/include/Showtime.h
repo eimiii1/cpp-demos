@@ -12,7 +12,7 @@ public:
     Showtime(std::string time, std::vector<bool> seats);
     
     std::string getTime() const;
-    const std::vector<bool>& getSeats() const;
+    std::vector<bool>& getSeats();
 };
 
 #endif
