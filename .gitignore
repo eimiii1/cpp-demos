@@ -18,3 +18,6 @@ bin/
 
 # markdowns (exluding READMEs)
 Sorting Techniques.md
+
+# batch files
+*.bat
