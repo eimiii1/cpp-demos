@@ -1,4 +1,4 @@
-# 🧠 Structured C++ / Cpp
+# 🧠 Structured C++
 
 A collection of small C++ projects and experiments built while learning and mastering core programming concepts.
 
